@@ -1,13 +1,27 @@
 package com.imyanev18.vacationmanager;
 
-public class Users {
+import javax.persistence.*;
 
+
+@Entity
+@Table(name = "Users")
+public class Users {
+    @Id
+    @GeneratedValue
+    private int id;
+    @Column
     private String nickname;
+    @Column
     private String password;
+    @Column
     private String firstName;
+    @Column
     private String lastName;
+    @Column
     private String role;
+    @Column
     private String team;
+
 
     public Users(String nickname, String password, String firstName, String lastName, String role, String team) {
         this.nickname = nickname;
@@ -16,6 +30,10 @@ public class Users {
         this.lastName = lastName;
         this.role = role;
         this.team = team;
+    }
+
+    public Users() {
+
     }
 
     public String getNickname() {

@@ -65,9 +65,10 @@ button:hover{
 }
 .accountButtons{
     padding: 16px 32px;
-    margin: 500px 650px;
+    margin: 20px 60px;
 }
 .Loginbutton {
+    position: relative;
     border: none;
     color: rgba(0,136,169,0.8);
     text-align: center;
@@ -85,13 +86,12 @@ button:hover{
     background-color: rgba(0,136,169,0.8);
     color: rgba(255, 255, 255, 0.8);
 }
-
 .Registerbutton:hover {
     background-color: rgba(1, 98, 47, 0.8);
     color: rgba(255, 255, 255, 0.8);
 }
-
 .Registerbutton {
+    position: relative;
     border: none;
     color: rgba(0,136,169,0.8);
     text-align: center;
